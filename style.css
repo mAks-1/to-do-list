@@ -82,10 +82,29 @@ main .wrapper .head .form img{
 
 main .wrapper .addedTasks .task{
     background-color: #DBE2EF;
-    width: 100%;
+    max-width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     display: flex;
+    word-wrap: break-word;
+    overflow-y: hidden;
+    border-radius: 5px;
+}
+
+main .wrapper .addedTasks .task::-webkit-scrollbar {
+    width: 10px; /* ширина всей полосы прокрутки */
+    height: 10px;
+}
+
+main .wrapper .addedTasks .task::-webkit-scrollbar-track {
+    background: rgba(201, 201, 201, 0); /* цвет зоны отслеживания */
+
+}
+
+main .wrapper .addedTasks .task::-webkit-scrollbar-thumb {
+    background-color: #112D4E; /* цвет бегунка */
+    border-radius: 20px; /* округлось бегунка */
+    border: rgba(255, 255, 255, 0.2) 1px solid; /* отступ вокруг бегунка */
 }
 
 main .wrapper .addedTasks .task input{
